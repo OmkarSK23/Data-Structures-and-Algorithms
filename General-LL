@@ -1,0 +1,35 @@
+'''
+Linked List Structure is
+Head ----> Data|pointer ------> Data|Pointer ------> Data|NULL
+              Node 1                Node 2
+'''
+
+class Node:
+
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+
+# Make the Node and add data in them    
+node1 = Node(5)
+node2 = Node(10)
+node3 = Node(15)
+node4 = Node(20)
+
+#Link all the Nodes using the pointers
+node1.next = node2
+node2.next = node3
+node3.next = node4
+
+#Updating my first element right after Head
+head = node1
+current = head
+
+while current:
+    print(current.data,end = '->')
+    current = current.next
+print('None')
+
+
+Output:
+5->10->15->20->None

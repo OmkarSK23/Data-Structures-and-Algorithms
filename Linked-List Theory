@@ -4,3 +4,10 @@ The individual items are called nodes and connected with each other using links.
 A node contains two things first is data and second is a link that connects it with another node.
 The first node is called the head node and we can traverse the whole list using this head and next links.
 
+
+Creating a Node Class
+We have created a Node class in which we have defined a __init__ function to initialize the node with the data passed as an argument,
+and a reference with None because if we have only one node then there is nothing in its reference.
+
+Implementation of Simple 4 Nodes Linked List
+Example: Below is a simple example to create a singly linked list with three nodes containing integer data.
